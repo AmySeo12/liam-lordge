@@ -1,0 +1,139 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+header{
+  background-image: url(../img/portada.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  display: table;
+}
+header .text{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+}
+header .text h2,
+header .text h1,
+header .text p{
+  margin: 5px 0;
+}
+header .text p{
+  font-family: 'Farsan', cursive;
+}
+.ir{
+  cursor: pointer;
+}
+.ir p{
+  font-family: 'Farsan', cursive;
+  text-align: center;
+}
+header .text h1{
+  font-size: 7em;
+  font-family: 'Great Vibes', cursive;
+}
+header .text h2{
+  font-size: 4em;
+  font-family: 'Farsan', cursive;
+}
+.photo{
+  height: 100vh;
+  padding: 5%;
+  position: relative;
+  background-image: url(../img/col.png);
+  background-color: #FFF0F0;
+  background-position: left top;
+  background-repeat: repeat-y;
+  background-size: 25%;
+  animation: animatedBackground 60s linear infinite;
+  -ms-animation: animatedBackground 60s linear infinite;
+  -moz-animation: animatedBackground 60s linear infinite;
+  -webkit-animation: animatedBackground 60s linear infinite;
+}
+.controls{
+  position: absolute;
+  top: 43%;
+  right: 5%;
+  cursor: pointer;
+}
+.none{
+  display: none;
+}
+.maquina{
+  transition: .3s;
+}
+.maquina span.ma{
+  position:absolute;
+  right:0;
+  width:0;
+  background: #FFF0F0;
+  border-left: 1px solid #000;
+  animation: escribir 5s steps(30);
+}
+.text-com{
+  width: 66%;
+  margin-left: auto;
+}
+.text-com div{
+  width: 50%;
+  text-align: justify;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.text-com h2{
+  font-size: 5em;
+  font-family: 'Sacramento', cursive;
+  margin-bottom: 20px;
+}
+.photos{
+  position: absolute;
+  top: 8.5%;
+  width: 12%;
+  right: 16%;
+}
+.photos div:first-child, .photos div:nth-child(3){
+  transform: rotate(10deg);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.photos div:last-child, .photos div:nth-child(2){
+  transform: rotate(-10deg);
+  -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.photos img{
+  width: 100%;
+}
+.firma{
+  font-size: 1em;
+  font-family: 'Sacramento', cursive;
+  width: 66%;
+  margin-left: auto;
+}
+@keyframes animatedBackground {
+      from { background-position: 0 0; }
+      to { background-position: 0 100%; }
+    }
+    @-webkit-keyframes animatedBackground {
+      from { background-position: 0 0; }
+      to { background-position: 100% 0; }
+    }
+    @-ms-keyframes animatedBackground {
+      from { background-position: 0 0; }
+      to { background-position: 100% 0; }
+    }
+    @-moz-keyframes animatedBackground {
+      from { background-position: 0 0; }
+      to { background-position: 100% 0; }
+    }
+@keyframes escribir {
+  from { width: 66% }
+  to { width: 35% }
+}
